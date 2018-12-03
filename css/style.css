@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    padding: 5px 30px;
+    background: #2C6798;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+label{
+    display: block;
+}
+
+h1 {
+    font-size: 1.125em;
+    margin: 20px 0 0 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px #DB3738 solid;
+    display: inline-block;
+    color: #2C6798;
+    font-weight: normal;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.125em;
+}
+
+h3{
+    margin: 10px 0 5px 16px;
+    font-weight: normal;
+    color: #2C6798;
+}
+
+p{
+    font-size: 0.625em;
+    margin: 0 16px 0 16px;
+}
+
+article{
+    margin: 12px 16px;
+    padding: 3px 0;
+    background-color: #EBEBEC;
+    border-radius: 4px;
+}
+
+ul li{
+    flex: 1;
+    text-align: center
+}
+
+header {
+    position: relative;
+    min-height: 50px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+ul li a {
+    margin: auto;
+    text-decoration: none;
+}
+
+#retlogo {
+    height: 50px;
+    margin-top: 1em;
+    margin: 1em auto;
+    display: block;
+}
+
+#account {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 1em;
+}
+
+#overzicht {
+    padding: 0.5em 3em;
+    background-color: #EBEBEC;
+    border-top-right-radius: 4px;
+}
+
+#verhalen {
+    padding: 0.5em 3em;
+}
+
+.leesverder {
+    display: block;
+    text-align: right;
+    margin-right: 16px;
+    font-size: 0.75em;
+    text-decoration: none;
+    color: #2C6798;
+}
+
+.linkverhalen {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.75em;
+    text-align: center;
+    text-decoration: none;
+    color: #2C6798;
+}
+
+.type {
+    width: 100%;
+    display: block;
+    padding: 11px;
+    border-radius:4px;
+    border: none;
+    font-style: italic;
+    margin-bottom: 6px;
+}
+
+.type:focus {
+    border-radius:4px;
+    box-shadow: 0 0 3pt 2pt #DB3738;
+    font-style: normal;
+}
+
+.filteroptie {
+    background-color: #EBEBEC;
+}
+
+.filter {
+    padding: 10px 16px 10px 16px;
+}
+
+select {
+    display: block;
+    background-color: #ffffff;
+    padding: 9px 0 9px 11px;
+    margin-bottom: 11px;
+    border: none;
+    width: 100%;
+}
+
+select:focus{
+    box-shadow: 0 0 3pt 2pt #DB3738;
+}
+
+.form {
+    border-bottom: 1px #DB3738 solid;
+    display: inline-block;
+    color: #2C6798;
+    margin-bottom: 10px;
+}
+
+.zoekknop {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+
+}
+input.type:valid {
+    border-color:green solid;
+    border: 1px;
+}
