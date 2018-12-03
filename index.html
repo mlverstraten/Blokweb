@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>99 Verhalen website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/689.jpg" alt="Ret Logo" id="retlogo">
+        <img src="images/account.png" alt="account icoontje rood" id="account">
+    </header>
+     <ul>
+         <li id="overzicht">
+            <a href="index.html">Overzicht</a>
+         </li>
+         <li id="verhalen">
+            <a  href="verhalen.html">Verhalen</a>
+         </li>
+     </ul>
+<main>
+    <section class="filteroptie">
+        <h2>Filter opties</h2>
+        <form action="submit">
+
+        <div class="filter">
+            <input class="type" type="text" name="locatie"  placeholder="Type hier uw vertreklocatie...">
+
+            <label  class="form" for="leesduur">Leesduur</label>
+            <select name="duur" id="leesduur">
+                <option value="ondervijf">&lt; 5 minuten</option>
+                <option value="vijftottien">5 - 10 minuten</option>
+                <option value="meerdantien">&gt; 10 minuten</option>
+            </select>
+       
+            <label class="form" for="sorteer">Voorkeuren</label>
+            <select name="kenmerken" id="sorteer">
+                <option value="hoog">Populariteit (Hoog naar Laag)</option>
+                <option value="laag">Populariteit (Laag naar Hoog)</option>
+                <option value="alfabeta">A-Z</option>
+                <option value="alfabetz">Z-A</option>
+                <option value="5sterren">5 sterren beoordeeld</option>
+            </select>
+        
+            <label class="form" for="gerne">Genre</label>
+            <select name="genre" id="genre">
+                <option value="Thriller">Thriller</option>
+                <option value="Horror">Horror</option>
+                <option value="Bekend persoon">Bekend persoo </option>
+                <option value="Blij">Blij</option>
+                <option value="Geïrriteerd">Geïrriteerd</option>
+            </select>
+        </div>
+        <div class="zoekknop">
+            <button> Zoeken </button>
+        </div>
+        </form>
+    </section>
+
+    <h1> Populair in deze omgeving </h1>
+
+    <section>
+        <article>
+            <h3>iPhone</h3>
+            <p>Om een uur of 12 stapte ik op CS bus 21 uitomdat ik naar de Ipenbare Bibliotheek op weg was, waar ik Stijloefeningen van Q-No wilde lenen. Was ik al een tijdje naar op zoek. Kutweer’ dat het was. En een chaos, bouwputten e.d. Afijn, voordat ik de bieb in wilde gaan werd ik aangehouden […]</p>
+            <a href="iphone.html" class="leesverder">Lees verder...</a>
+        </article>
+
+        <article>
+            <h3>Mop</h3>
+            <p>Ken je die mop van die man die met bus 21 naar het Centraal Station van Amsterdam ging, langs de diverse bouwputten liep richting de Openbare Bibliotheek om daar Stijloefeningen van Raymond Queneau te kunnen lenen, een boek waar hij al weken naar op zoek was, maar dat hij voor binnenkomst tegengehouden werd door een […]</p>
+            <a href="mop.html" class="leesverder">Lees verder...</a>
+        </article>
+
+        <article>
+            <h3>Lange Frans</h3>
+            <p>Uh, uh, dit is Lange Frans, uh, uh Daar gaan we dan… Drop die beat. (De beat wordt gedropt, Lange Frans gaat er vol in:) Het is dinsdagochtend, zoveel februari Ik stap uit de bus, zonder veel bombarie Voor me slaapt mijn zoon, in z’n kinderwagen Voor hem zing ik dit lied, zonder koek van […]</p>
+            <a href="langefrans.html" class="leesverder">Lees verder...</a>
+        </article>
+    </section>
+    
+</main>
+
+    <a href="99verhalen.html" class="linkverhalen">Alle 99 verhalen</a>
+</body>
+</html>
