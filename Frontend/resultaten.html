@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>99 Verhalen website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><img src="images/689.jpg" alt="Ret Logo" id="retlogo"></li>
+            <li class="zoekbalktablet" ><input class="typetablet" type="text" name="locatie"  placeholder="Zoek voor genres, sfeerwoorden etc..."> <!-- zoekbalk bij tablet en desktop-->
+            <img src="images/account.png" alt="account icoontje rood" id="account"></li>
+        </ul> 
+ <img id="tendimg" src="images/vrouwret.jpg" alt="vrouwvanret">
+     <ul class="filterul">
+         <li id="overzichtaan">
+            <a class="classoverzicht" href="index.html">Overzicht</a> <!-- nav binnen de website-->
+         </li>
+         <li id="verhalen">
+            <a class="classverhalen" href="mijnverhalen.html"> Mijn verhalen</a> <!-- nav binnen de website-->
+         </li>
+        </ul>
+      <h1 class="welkomstitel">99 verhalen voor onderweg</h1>
+    </header>
+<main>
+    <section class="filteroptie">
+   <div class="accstyling"> 
+    <h2> Populair </h2>
+    <button class="accordion"> Filter </button>
+   </div>
+      <form action="submit"> <!-- Formulier-->
+        <fieldset>  
+          <div class="filter">
+             <input class="type" type="text" name="locatie"  placeholder="Zoek voor genres, sfeerwoorden etc..."> <!-- Inputveld bij mobiel -->
+
+             <label  class="form" for="leesduur">Leesduur</label> <!-- Keuze voor leesduur -->
+             <select name="duur" id="leesduur">
+                <option value="Geen"> - </option>
+                <option value="ondervijf">&lt; 5 minuten</option>
+                <option value="vijftottien">5 - 10 minuten</option>
+                <option value="meerdantien">&gt; 10 minuten</option>
+             </select>
+             
+             <label class="form" for="gerne">Genre</label> <!-- Keuze voor genre -->
+             <select name="genre" id="genre">
+                <option value="Geen"> - </option>
+                <option value="Agressief">Agressief</option>
+                <option value="Beknopt">Beknopt</option>
+                <option value="Drama">Drama</option>
+                <option value="Grappig">Grappig</option>
+                <option value="Verwarrend">Verwarrend</option>
+                <option value="Vrolijk">Vrolijk</option>
+                <option value="Poetisch">Poetisch</option>
+             </select>
+
+             <label class="form" for="sorteer">Sorteren op</label> <!-- Keuze om verhalen te sorteren -->
+             <select name="kenmerken" id="sorteer">
+                <option value="Geen"> - </option>
+                <option value="hoog">Populariteit (Hoog naar Laag)</option>
+                <option value="laag">Populariteit (Laag naar Hoog)</option>
+                <option value="alfabeta">A-Z</option>
+                <option value="alfabetz">Z-A</option>
+             </select>
+             
+            </div>   
+
+           <div class="zoekknop">
+            <input type="submit" class="zoekknopform" value="Zoeken!">
+           </div>
+
+         </fieldset>
+        </form>
+    </section>
+        
+        <article> <!-- verhalen -->
+            <header>
+                <img class="bookmark" src="images/icon.svg" alt="bookmarkicoon">
+                <img class="artimg" src="images/Lepra.jpg" alt="Een foto van Nico Dijkshoorn">
+            </header>
+            <footer>
+                <h3>Nico Dijkshoorn die Mart Smeets imiteert</h3>
+                <img class="like"  src="images/like.png" alt="like">
+            </footer>
+        </article>
+    </section>
+    
+</main>
+    <script src="js/script.js"></script>
+</body>
+</html>

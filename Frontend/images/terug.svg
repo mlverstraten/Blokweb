@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="35px" viewBox="0 0 84 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Overzicht</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overzicht" transform="translate(-76.000000, -24.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="630" height="1044"></rect>
+            <path d="M94.6337771,32.2923078 L94.6337771,32.2923078 C94.2288781,31.9025641 93.5733766,31.9025641 93.1695131,32.2923078 L84.6065719,40.5558734 C83.7978094,41.3363602 83.7978094,42.6025275 84.6065719,43.3830142 L93.2316459,51.7075398 C93.6324028,52.0932862 94.2796199,52.0982829 94.6855545,51.7175333 L94.6855545,51.7175333 C95.1008089,51.3287889 95.1049511,50.6882102 94.6969455,50.2934698 L86.8029679,42.6764789 C86.3980688,42.2857358 86.3980688,41.6531518 86.8029679,41.2624088 L94.6337771,33.7053785 C95.0386761,33.3156348 95.0386761,32.6830508 94.6337771,32.2923078" id="arrow_left-[#335]" fill="#2C6798"></path>
+            <text id="Terug" font-family="Avenir-Medium, Avenir" font-size="16" font-weight="400" fill="#2C6798">
+                <tspan x="110" y="47">Terug</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

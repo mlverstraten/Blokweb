@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    margin: 0;
+    font-family: roboto, sans-serif;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+
+article {
+    border: 1px solid #ccc;
+    padding: 1em;
+    text-align: center;
+}
+article img {
+    width: 50px;
+}
+
+article h2{
+    font-size: 1.1em;
+}
+
+article p {
+    color: #666;
+}
+
+article a {
+    color: #ffad00;
+    text-decoration: none;
+}
+
+article a:hover{
+    font-weight: bold;
+}
+

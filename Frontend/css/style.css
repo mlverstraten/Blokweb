@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url(https://fonts.googleapis.com/css?family=Righteous); /* voor verhaal styling*/
+*{
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1em;
+    /*transition: all 0.4s;*/
+}
+
+*:focus { 
+    border-bottom: #2C6798 solid 1px;
+}
+
+/* Telefoon */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {    /* Filter button*/
+    padding: 5px 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+label{ /* Form */
+    display: block;
+}
+
+h2 { /* Populair tekst*/
+    font-size: 1.5em;
+    margin: 20px 0 0.8em 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px #DB3738 solid;
+    display: inline-block;
+    color: #2C6798;
+    font-weight: normal;
+}
+
+h3{ /* Tekst bij de verhalen (voorkant)*/
+    margin: 10px 0 5px 16px;
+    font-weight: normal;
+    color: #2C6798;
+    font-size: 1.125em;
+}
+
+p{ /* Tekst*/
+    font-size: 1em;
+    margin: 0 16px 0 16px;
+}
+
+article{ /* Verhalen*/
+    margin: 0.75em 1em;
+    background-color: #EBEBEC;
+    border-radius: 4px;
+    position: relative;
+}
+
+ul li{ /* Nav*/
+    flex: 1;
+    text-align: center
+}
+
+header { /* Elementen in header zijn absolute*/
+    position: relative;
+    min-height: 50px;
+}
+
+ul { /* Nav*/
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+li { /* reset*/
+    text-decoration: none;
+    list-style: none;
+}
+
+fieldset{ /* Form fieldset*/
+    border: none;
+}
+
+ul li a { /* Nav*/
+    margin: auto;
+    text-decoration: none;
+    color: #2C6798;
+    max-width: 5.4em;
+}
+
+section article footer { /* Article gebied om tekst en iconen toe te voegen*/
+    padding: 0.3em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#retlogo { /* Icoon RET*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1em;
+    margin: 0 auto;
+    height: 50px;
+    display: block;
+}
+
+#account { /*Icoon account*/
+    height: 50px;   
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.welkomstitel { /* Tekst voor tablet en desktop*/
+    display: none;
+}
+
+.zoekknopform { /* Zoekknop styling*/
+    background-color: #2C6798;
+    color: #ffffff;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 4px;
+}
+
+#overzichtaan { /* Nav*/
+    padding: 0.5em 3em;
+    border-top-right-radius: 4px;
+}
+
+.classoverzicht { /* Nav*/
+    border-bottom: #2C6798 solid 1px;
+    display: block;
+    padding-bottom: 0.5em;
+}
+
+.filterul { /* Nav*/
+    margin-top: 6em;
+}
+
+#verhalen { /* Mijn verhalen in de nav*/
+    padding: 0.5em 3em;
+}
+
+#tendimg { /* Foto vrouw niet laten zien op telefoon*/
+    display: none;
+}
+
+.typetablet{ /* Invulveld niet laten zien op telefoon*/
+    display: none;
+}
+
+.bookmark { /* Icoon bookmark */
+    position: absolute;
+    width: auto;
+    height: 30px;
+    right: 0.5em;
+    top: 0.7em;
+}
+
+.accordion { /* Inklap form*/
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-left: 2em;
+    padding: 1px;
+    width: 3.5em;
+    height: 2em;
+    text-align: center;
+    background: #2C6798;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.like { /* Icoon like*/
+    width: 40px;
+    height: 40px;
+    padding-bottom: 0.2em;
+    margin-right: 0.5em;
+}
+
+.bookmark { /* Icoontje bookmark*/
+    width: 40px;
+}
+
+.artimg { /* Articles*/
+    width: 100% !important; 
+    height: 15em !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    padding: 0.3em 0.3em 0 0.3em;
+}
+
+.type { /* Invulveld*/
+    width: 100%;
+    display: block;
+    padding: 11px 0 11px 0;
+    border-radius:4px;
+    border: none;
+    margin-bottom: 6px;
+    font-size: 0.75em;
+}
+
+.filter {
+    padding: 10px 16px 10px 16px;
+    overflow: hidden;
+}
+
+.headerverhaal{ /* verhaal pagina styling*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.verhaaliphone { /* verhaal pagina styling*/
+    margin-left:2em;
+    margin-right:2em;
+}
+
+/*VERHAAL STYLING*/
+
+.item1{
+    word-spacing: 3em;
+    word-wrap: break-word;
+    color: #DB3738;
+}
+
+.item2{
+    margin: 10em;
+    opacity: 40%;
+}
+
+.item3 {
+    word-spacing: 0.5em;
+    direction: rtl;
+}
+
+.item4 {
+    transform: rotate(-180deg);
+    color: #2C6798;
+    font-size: 2em;
+}
+
+.item5{
+    color: aqua;
+    background: #EBEBEC;
+    transition: 0,4;
+    opacity: 30%;
+}
+
+.item6{
+    word-spacing: 0.4em;
+    font-stretch: expanded;
+    font-style: oblique;
+    transform: rotate(1deg);
+}
+
+.item7{
+    color: aqua;
+    background: #EBEBEC;
+    transition: 0,4;
+    opacity: 30%;
+}
+
+.item8 {
+    font-family: monospace; /* Web-safe typewriter-like font */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blinking-cursor .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .item9{
+    font-family: monospace; /* Web-safe typewriter-like font */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blinking-cursor .5s step-end infinite;
+  }
+
+.item10{
+    text-shadow: #DB3738;
+    border: 1px aquamarine solid;
+    margin: 1em;
+  }
+
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+.item11{
+    position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+
+.item12{
+    margin: 10em;
+    opacity: 40%;
+  }
+
+
+.item13{
+    display: inline-block;
+  color: white;
+  font-family: 'Righteous', serif;
+  font-size: 3em; 
+  text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+  }
+  h1:after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: .06em; left: .06em;
+    z-index: -1;
+    text-shadow: none;
+    background-image:
+      linear-gradient(
+        45deg,
+        transparent 45%,
+        hsla(48,20%,90%,1) 45%,
+        hsla(48,20%,90%,1) 55%,
+        transparent 0
+        );
+    background-size: .05em .05em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+.item14{
+      text-align: right;
+      color: blueviolet;
+      text-decoration: overline;
+      margin: 1em;
+  }
+
+.item15{
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.item16{
+    margin: 2.2em;
+    word-spacing: 0.4em;
+    opacity: 20%;
+      
+}
+
+.item17{
+      text-shadow: 3px 2px red;
+      margin: 1.2em;
+}
+
+.item18{
+    font-family: monospace; /* Web-safe typewriter-like font */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blinking-cursor .5s step-end infinite;
+    margin: 3.2em;
+}
+
+.item19{
+      color: #EBEBEC;
+      margin: 2.1em;
+}
+
+.item20{
+      text-align: right;
+      color: aqua;
+      font-size: 3em;
+      margin: 0.9em;
+}
+
+/* EINDE VERHAAL STYLEN */
+
+.iphoneverhaalimg { /* verhaal pagina styling*/
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 10em;
+    height: auto;
+}
+
+.likeverhaal { /* verhaal pagina styling*/
+    width: 2.5em;
+    height: 2.5em;
+    padding-bottom: 0.2em;
+    margin-left: 3em;
+    margin-bottom: 1.5em;
+}
+
+.bookmarkverhaal { /* verhaal pagina styling*/
+    height: 2.1875em;
+    width: auto;
+    margin-left: 3.5em;
+    margin-bottom: 1.7em;
+}
+
+#retlogoverhaal { /* verhaal pagina styling*/
+    height: 50px;
+    display: block;
+}
+
+#accountverhaal { /* verhaal pagina styling*/
+    height: 50px;
+}
+
+.type:focus { /* form tab functie*/
+    border-radius:4px;
+    box-shadow: 0 0 3pt 1pt #2C6798;
+}
+
+form.close { /* Javascript form closen*/
+    display: none;
+}
+
+select { /*Input voor form*/
+    display: block;
+    background-color: #ffffff;
+    font-size: 0.75em;
+    padding: 9px 0 9px 11px;
+    margin-bottom: 11px;
+    border: none;
+    width: 100%;
+}
+
+select:focus{ /* form tab functie*/
+    box-shadow: 0 0 3pt 1px #2C6798 ;
+}
+
+a:active { /* geen streepjes*/
+    text-decoration: none;
+}
+
+a:visited { /* Geen andere kleur als je link bezocht hebt*/
+    text-decoration: none;
+}
+
+.form { /* Labels bij form */
+    border-bottom: 1px #DB3738 solid;
+    display: inline-block;
+    color: #2C6798;
+    margin-bottom: 10px;
+}
+
+.zoekknop { /* Zoekknop styling */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+/* Tablet */
+
+@media (min-width: 48em){
+
+*{
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1em;
+}
+
+h2 {
+   margin-left: 1.938em;
+}
+
+#account {
+    height: 50px;
+    top: 0;
+    position: relative;
+}
+
+#retlogo {
+    position: absolute;
+    left: 1.938em;
+    top: 1em;
+    margin: 0;
+    height: 50px;
+    display: block;
+}
+
+#tendimg {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 6em;
+}
+
+ul {
+    display: flex;
+    padding: 0 5 rem; 
+    margin: 0;
+}
+
+fieldset{
+    margin: 0 4em;
+}
+
+form {
+    background-color: #ffffff;  
+}
+
+article {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#overzichtaan { 
+    background-color: #ffffff;
+}
+
+.zoekbalktablet {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.welkomstitel {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.filterul {
+    margin-top: 1em;
+}
+
+.typetablet { 
+    display: flex;
+    width: 22em;
+    border: 2px solid #EBEBEC;
+    padding: 11px;
+    border-radius:4px;
+    font-size: 0.75em;
+}
+
+.type {
+    display: none;
+}
+
+.accordion {
+    top: 25em;
+    
+}
+
+.flexsection{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+section article {
+    width: 43%;
+}
+
+section article:nth-child(odd):last-child{
+    flex-basis: 43%;
+    margin: 2em 2em 1em 2em;
+
+}
+
+.classverhalen {
+    color: rgba(44, 103, 153, 0.4);
+}
+
+#overzichtaan {
+    margin-left: 9.5em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+#verhalen {
+    margin-right: 9.5em;
+    padding-bottom: 1em;
+}
+
+.filteroptie {
+    background-color: #ffffff !important;
+}
+
+.headerverhaal {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.verhaaliphone {
+    margin-left:3em;
+    margin-right:3em;
+}
+
+.iphoneverhaalimg {
+    margin-top: 2em;
+    margin-left: 8em;
+    width: 10em;
+    height: auto;
+}
+
+.likeverhaal {
+    width: 2.5em;
+    height: 2.5em;
+    padding-bottom: 0.2em;
+    margin-left: 10em;
+    margin-bottom: 1.5em;
+
+}
+
+.bookmarkverhaal {
+    height: 2.1875em;
+    width: auto;
+    margin-left: 6.5em;
+    margin-bottom: 1.7em;
+}
+
+#accountverhaal {
+    height: 50px;
+}
+
+#retlogoverhaal {
+    height: 50px;
+    display: block;
+}
+
+
+
+}
+
+
+
+@media (min-width: 60em) {
+
+article{
+    margin: 0 auto 0 auto;
+}
+
+.filterul {
+    position: absolute;
+    top: 0.7em;
+    left: 10em;
+}
+
+#overzichtaan {
+    margin-right: auto;
+    margin-left: 5em;
+}
+
+#verhalen {
+    margin-right: auto;
+    margin-left: 2em;
+
+}
+
+ul li {
+    white-space: nowrap;
+}
+
+.classverhalen{
+    width: auto;
+    height: auto;
+}
+
+.flexsection{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+section article {
+    width: 28%;
+}
+
+section article:nth-child(odd):last-child{
+    flex-basis: auto;
+    margin: auto;
+}
+
+.typetablet {
+    width: 22em;
+    padding-left: 1em;
+}
+
+@media (min-width: 72.5em) {
+    
+    .typetablet {
+        width: 32em;
+        padding-left: 1em;
+    }
+
+    #overzichtaan {
+        margin-right: auto;
+        margin-left: 6em;
+    }
+    
+
+
+}
