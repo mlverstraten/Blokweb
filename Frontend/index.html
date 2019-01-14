@@ -26,11 +26,11 @@
       <h1 class="welkomstitel">99 verhalen voor onderweg</h1>
     </header>
 <main>
-    <section class="filteroptie">
-   <div class="accstyling"> 
+ <section class="filteroptie">
+  <div class="accstyling"> 
     <h2> Populair </h2>
     <button class="accordion"> Filter </button>
-   </div>
+  </div>
       <form action="submit"> <!-- Formulier-->
         <fieldset>  
           <div class="filter">
@@ -44,10 +44,10 @@
                 <option value="meerdantien">&gt; 10 minuten</option>
              </select>
              
-             <label class="form" for="gerne">Genre</label> <!-- Keuze voor genre -->
+             <label class="form">Genre</label> <!-- Keuze voor genre -->
              <select name="genre" id="genre">
                 <option value="Geen"> - </option>
-                <option value="Agressief">Agressief</option>
+                <option value="Agressief">Agressief </option>
                 <option value="Beknopt">Beknopt</option>
                 <option value="Drama">Drama</option>
                 <option value="Grappig">Grappig</option>
@@ -67,46 +67,48 @@
              
             </div>   
 
-           <div class="zoekknop">
-            <input type="submit" class="zoekknopform" value="Zoeken!">
-           </div>
+           <a href="resultaten.html" class="zoekknop">
+               Zoeken!
+            <!--<input type="submit" class="zoekknopform" value="Zoeken!">-->
+           </a>
 
-         </fieldset>
-        </form>
-    </section>
-
-    <section class="flexsection">
+        </fieldset>
+      </form>
+ </section>
+   
+    <section class="flexen">
+      <h3>Articles</h3>
         <article> <!-- verhalen -->
-          <a href="verhaal.html">
-            <header>
-             <img class="bookmark" src="images/icon.svg" alt="bookmarkicoon">
+          <header>
+             <img id="img" src="images/bookmark.png" alt="bookmarkicoon">
+           <a href="verhaal.html">
              <img class="artimg" src="images/iphone.png" alt="Iphone logo">
-            </header>
-          </a>
-            <footer>
-             <h3>iPhone</h3>
+           </a>
+          </header>
+          <footer>
+             <h4>iPhone</h4>
              <img class="like"  src="images/like.png" alt="like"> 
-            </footer>
+          </footer>
         </article>
 
         <article> <!-- verhalen -->
             <header>
-                <img class="bookmark" src="images/icon.svg" alt="bookmarkicoon">
+                <img class="bookmark" src="images/bookmark.png" alt="bookmarkicoon">
                 <img class="artimg"  src="images/mop.png" alt="schilderij van het sfeerwoord mop">
             </header>
             <footer>
-                <h3>Mop</h3>
+                <h4>Mop</h4>
                 <img class="like"  src="images/like.png" alt="like">
             </footer>
         </article>
         
         <article> <!-- verhalen -->
             <header>
-                <img class="bookmark" src="images/icon.svg" alt="bookmarkicoon">
+                <img class="bookmark" src="images/bookmark.png" alt="bookmarkicoon">
                 <img class="artimg" src="images/Lepra.jpg" alt="Een foto van Nico Dijkshoorn">
             </header>
             <footer>
-                <h3>Nico Dijkshoorn die Mart Smeets imiteert</h3>
+                <h4>Nico Dijkshoorn die Mart Smeets imiteert</h4>
                 <img class="like"  src="images/like.png" alt="like">
             </footer>
         </article>

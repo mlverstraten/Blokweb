@@ -18,6 +18,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {    /* Filter button*/
     padding: 5px 30px;
     color: white;
@@ -40,7 +44,11 @@ h2 { /* Populair tekst*/
     font-weight: normal;
 }
 
-h3{ /* Tekst bij de verhalen (voorkant)*/
+h3 {
+    display: none;
+}
+
+h4{ /* Tekst bij de verhalen (voorkant)*/
     margin: 10px 0 5px 16px;
     font-weight: normal;
     color: #2C6798;
@@ -61,7 +69,8 @@ article{ /* Verhalen*/
 
 ul li{ /* Nav*/
     flex: 1;
-    text-align: center
+    text-align: center;
+    white-space: nowrap;
 }
 
 header { /* Elementen in header zijn absolute*/
@@ -153,7 +162,7 @@ section article footer { /* Article gebied om tekst en iconen toe te voegen*/
     display: none;
 }
 
-.bookmark { /* Icoon bookmark */
+.bookmark, #img { /* Icoon bookmark */
     position: absolute;
     width: auto;
     height: 30px;
@@ -182,10 +191,6 @@ section article footer { /* Article gebied om tekst en iconen toe te voegen*/
     height: 40px;
     padding-bottom: 0.2em;
     margin-right: 0.5em;
-}
-
-.bookmark { /* Icoontje bookmark*/
-    width: 40px;
 }
 
 .artimg { /* Articles*/
@@ -452,6 +457,14 @@ section article footer { /* Article gebied om tekst en iconen toe te voegen*/
     margin-bottom: 1.7em;
 }
 
+.gifnot {
+    position: absolute;
+    height: 5em;
+    top: 8.8em;
+    left: 12.2em;
+    z-index: -1;
+}
+
 #retlogoverhaal { /* verhaal pagina styling*/
     height: 50px;
     display: block;
@@ -503,6 +516,13 @@ a:visited { /* Geen andere kleur als je link bezocht hebt*/
     display: flex;
     justify-content: center;
     padding-bottom: 16px;
+    background-color: #2C6798;
+    color: #ffffff;
+    margin: auto;
+    height: 2em;
+    width: 5em;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 4px;
 }
 
 /* Tablet */
@@ -589,6 +609,8 @@ article {
     margin-top: 1em;
 }
 
+
+
 .typetablet { 
     display: flex;
     width: 22em;
@@ -604,10 +626,21 @@ article {
 
 .accordion {
     top: 25em;
-    
 }
 
-.flexsection{
+.accstyling{
+    position: relative;
+}
+
+.gifnot {
+    position: absolute;
+    height: 5em;
+    top: 0%;
+    left: 14em;
+    z-index: 1;
+}
+
+.flexen{
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -689,7 +722,7 @@ section article:nth-child(odd):last-child{
 }
 
 
-
+/*Desktop*/
 @media (min-width: 60em) {
 
 article{
