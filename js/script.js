@@ -20,7 +20,10 @@ var bookmarkVol = "images/Iconsvol.png";
 var gif = "images/bookmark.gif";
 var gifReverse = "images/bookmarkreverse.gif";
 var state = false;
-var img = document.getElementById("img") /*of */; document.querySelector
+var img = document.getElementById("img");
+
+var verhaal = document.querySelector('.meldingverhalen');
+verhaal.classList.add('hidden');
 
 	img.addEventListener("click", test);
 
@@ -31,12 +34,15 @@ function test(){
 	state = false;
 	img.src = gifReverse;
 	setTimeout(function(){img.src = bookmarkLeeg;},1000);
+    verhaal.classList.toggle('hidden');
+    verhaal.src = "images/1.gif";
+    }
     
-	}
   else /*if bookmark = leeg*/{
     state = true;
 	img.src = gif;
-	setTimeout(function(){img.src = bookmarkVol;},1000);
+    setTimeout(function(){img.src = bookmarkVol;},1000);
+    verhaal.classList.toggle('hidden');
   }
 }
 
