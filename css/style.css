@@ -169,6 +169,14 @@ legend{
     border-radius: 4%;
 }
 
+input[type=email]:focus{
+    box-shadow: 0 0.2em #2C6798
+}
+
+input[type=password]:focus{
+    box-shadow: 0 0.2em #2C6798
+}
+
 input[type=email]:valid{
     border: lightgreen 0.2em solid !important;
 }
@@ -176,6 +184,11 @@ input[type=email]:valid{
 input[type=email]:invalid{
     border: red 0.2em solid !important;
 }
+
+input[type=]:invalid{
+    border: red 0.2em solid !important;
+}
+
 
 #buttonlogin {
     background-color: #2C6798;
