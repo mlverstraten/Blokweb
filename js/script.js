@@ -43,6 +43,7 @@ function test(){
 	img.src = gif;
     setTimeout(function(){img.src = bookmarkVol;},1000);
     verhaal.classList.toggle('hidden');
+    verhaal.src = "images/1.gif";
   }
 }
 
