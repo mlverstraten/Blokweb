@@ -7,10 +7,6 @@
     /*transition: all 0.4s;*/
 }
 
-*:hover {
-    color: #5086b3;
-}
-
 /* Telefoon */
 
 body {
@@ -22,13 +18,21 @@ a {
     text-decoration: none;
 }
 
-a:focus { 
-    background-color: rgba(44,103,152,20%);
+li a:focus { 
+    color: #DB3738;
     padding-bottom: 0.5em;
 }
 
 a:hover {
-   color: #5086b3;
+   color: #DB3738;
+}
+
+article:hover{
+    box-shadow: 0 0.065em red;
+}
+
+article:focus{
+    box-shadow: 0.065em red;
 }
 
 button {    /* Filter button*/
@@ -105,11 +109,11 @@ fieldset{ /* Form fieldset*/
 
 /*login scherm*/ 
 
-.bodylogin{
+loginpagina.bodylogin{
     color: #2C6798;
 }
 
-#fieldset {
+loginpagina#fieldset {
     background: #DB3738;
     width: 30%;
     margin: auto;
@@ -118,27 +122,74 @@ fieldset{ /* Form fieldset*/
     border: 0;
 }
 
-legend{
-    margin: auto;
-    margin-top:3em;
-    padding-bottom: 2em;
-    display: none;
-    width: 7.188em; 
-    text-align: right; 
-    float: left; 
-    margin-right: 0.625em;
-    padding-top: 0.563em;
-    font-size: 1em; 
+.headerverhaallogin{
+    margin-top:2em;
 }
 
-.clear {
-    clear: both;
+form{
+    border-radius: 2%;
+}
+
+legend{
+ margin: auto;
+ padding: 1em;
 }
 
 .formlogin {
-    width: 406px; 
-    margin: 170px auto 0; 
+    width: 23em; 
+    margin: 10.6em auto 0; 
     background: #EBEBEC;
+}
+
+.headerverhaal{
+    margin: auto;
+}
+
+.inlogaanmelden {
+    font-weight: normal;
+}
+
+#retlogologin{
+    display: flex;
+    justify-content: center;
+}
+
+#labellogin {
+    margin-top: 0.3em;
+}
+
+#accountlogin{
+    height: 3.125em;
+    margin-top: 1em;
+}
+
+#textlogin{
+    padding: 0.5em; 
+    border: 1px solid #ffffff;
+    border-radius: 4%;
+}
+
+input[type=email]:valid{
+    border: lightgreen 0.2em solid !important;
+}
+
+input[type=email]:invalid{
+    border: red 0.2em solid !important;
+}
+
+#buttonlogin {
+    background-color: #2C6798;
+    color: white;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.25em;
+    margin-top: 1em;
+    cursor: pointer;
+    display: inline;
+  }
+
+#buttonlogin:hover{
+    color: #DB3738;
+    background: #ffffff;
 }
 
 /* einde login scherm */
@@ -288,7 +339,6 @@ section article footer { /* Article gebied om tekst en iconen toe te voegen*/
     top: 1em;
     right: 1em;
 }
-
 .welkomstitel { /* Tekst voor tablet en desktop*/
     display: none;
 }
@@ -326,6 +376,7 @@ section article footer { /* Article gebied om tekst en iconen toe te voegen*/
     top: -0.8em;
     left: 8.3em;
     z-index: -1;
+    transition: all 0.4s;
 }
 
 #tendimg { /* Foto vrouw niet laten zien op telefoon*/
