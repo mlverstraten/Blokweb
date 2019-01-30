@@ -1,0 +1,905 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1em;
+    /*transition: all 0.4s;*/
+}
+
+/* Telefoon */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a:focus { 
+    color: #DB3738;
+    padding-bottom: 0.5em;
+}
+
+a:hover {
+   color: #DB3738;
+}
+
+article:hover{
+    box-shadow: 0 0.065em red;
+}
+
+article:focus{
+    box-shadow: 0.065em red;
+}
+
+button {    /* Filter button*/
+    padding: 0.313em 1.875em;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.25em;
+    font-size: 1em;
+}
+
+label{ /* Form */
+    display: block;
+}
+
+h2 { /* Populair tekst*/
+    font-size: 1.5em;
+    margin: 1.25em 0 0.8em 1em;
+    padding-bottom: 0.313em;
+    border-bottom: 0.063em #DB3738 solid;
+    display: inline-block;
+    color: #2C6798;
+    font-weight: normal;
+}
+
+h3 {
+    display: none;
+}
+
+h4{ /* Tekst bij de verhalen (voorkant)*/
+    margin: 0.625em 0 0.313em 1em;
+    font-weight: normal;
+    color: #2C6798;
+    font-size: 1.125em;
+}
+
+p{ /* Tekst*/
+    font-size: 1em;
+    margin: 0 1em 0 1em;
+}
+
+article{ /* Verhalen*/
+    margin: 0.75em 1em;
+    background-color: #EBEBEC;
+    border-radius: 0.25em;
+    position: relative;
+}
+
+ul li{ /* Nav*/
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+}
+
+header { /* Elementen in header zijn absolute*/
+    position: relative;
+    min-height: 3.125em;
+}
+
+ul { /* Nav*/
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+li { /* reset*/
+    text-decoration: none;
+    list-style: none;
+}
+
+fieldset{ /* Form fieldset*/
+    border: none;
+}
+
+/*login scherm*/ 
+
+loginpagina.bodylogin{
+    color: #2C6798;
+}
+
+loginpagina#fieldset {
+    background: #DB3738;
+    width: 30%;
+    margin: auto;
+    border-radius: 4%;
+    margin-top: 3em;
+    border: 0;
+}
+
+.headerverhaallogin{
+    margin-top:2em;
+}
+
+form{
+    border-radius: 2%;
+}
+
+legend{
+ margin: auto;
+ padding: 1em;
+}
+
+.formlogin {
+    width: 23em; 
+    margin: 10.6em auto 0; 
+    background: #EBEBEC;
+}
+
+.headerverhaal{
+    margin: auto;
+}
+
+.inlogaanmelden {
+    font-weight: normal;
+}
+
+#retlogologin{
+    display: flex;
+    justify-content: center;
+}
+
+#labellogin {
+    margin-top: 0.3em;
+}
+
+#accountlogin{
+    height: 3.125em;
+    margin-top: 1em;
+}
+
+#textlogin{
+    padding: 0.5em; 
+    border: 1px solid #ffffff;
+    border-radius: 4%;
+}
+
+input[type=email]:focus{
+    box-shadow: 0 0.2em #2C6798
+}
+
+input[type=password]:focus{
+    box-shadow: 0 0.2em #2C6798
+}
+
+input[type=email]:valid{
+    border: lightgreen 0.2em solid !important;
+}
+
+input[type=email]:invalid{
+    border: red 0.2em solid !important;
+}
+
+input[type=]:invalid{
+    border: red 0.2em solid !important;
+}
+
+
+#buttonlogin {
+    background-color: #2C6798;
+    color: white;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.25em;
+    margin-top: 1em;
+    cursor: pointer;
+    display: inline;
+  }
+
+#buttonlogin:hover{
+    color: #DB3738;
+    background: #ffffff;
+}
+
+/* einde login scherm */
+
+/* verhaal opmaak*/
+
+#hover1:hover #hiddentext {
+    display:block;
+    display: inline;
+    text-decoration: none;
+}
+#hover2:hover #hiddentext {
+    display:block;
+    display: inline;
+}
+#hover3:hover #hiddentext{
+    display:block;
+    display: inline;
+}
+#hover4:hover #hiddentext{
+    display:block;
+    display: inline;
+}
+#hover5:hover #hiddentext{
+    display:block;
+    display: inline;
+}
+#hover6:hover #hiddentext{
+    display:block;
+    display: inline;
+}
+#hover7:hover #hiddentext{
+    display:block;
+    display: inline;
+}
+#hover8:hover #hiddentext{
+    display:block;
+    display: inline;
+}
+#hover9:hover #hiddentext{
+    display:block;
+    display: inline;
+}
+
+#hover1 {
+    height: 50px;
+    width: 300px;
+    display: inline;
+}
+
+#hover2 {
+    height: 50px;
+    width: 300px;
+    display: inline;
+}
+
+#hover3 {
+    height: 50px;
+    width: 300px;
+    display: inline;
+}
+
+#hover4 {
+    height: 50px;
+    width: 300px;
+    display: inline;
+}
+
+#hover5 {
+    height: 50px;
+    width: 300px;
+    display: inline;
+}
+
+#hover6 {
+    height: 50px;
+    width: 300px;
+    display: inline;
+}
+
+#hover7 {
+    height: 50px;
+    width: 300px;
+    display: inline;
+}
+
+#hover8 {
+    height: 50px;
+    width: 300px;
+    display: inline;
+}
+
+#hover9 {
+    height: 50px;
+    width: 300px;
+    display: inline;
+}
+
+#hiddentext {
+    display: none;
+    background: green;
+    color: #ffffff;
+    padding: 0.2em;
+    margin-left: 0.5em;
+}
+
+#pinline {
+    display: inline;
+}
+
+/* Einde verhaal opmaak */
+
+ul li a { /* Nav*/
+    margin: auto;
+    text-decoration: none;
+    color: #2C6798;
+    max-width: 5.4em;
+    background: white;
+}
+
+section article footer { /* Article gebied om tekst en iconen toe te voegen*/
+    position: relative;
+    padding: 0.3em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#retlogo { /* Icoon RET*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.2em;
+    margin: 0 auto;
+    height: 3.125em;
+    display: block;
+}
+
+#retlogologin {
+    height: 3.125em;
+    width: auto;
+    margin: auto;
+}
+
+#account { /*Icoon account*/
+    height: 3.125em !important;   
+    position: absolute !important;
+    top: 1em !important;
+    right: 1em !important;
+}
+.welkomstitel { /* Tekst voor tablet en desktop*/
+    display: none;
+}
+
+.zoekknopform { /* Zoekknop styling*/
+    background-color: #2C6798;
+    color: #ffffff;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.25em;
+}
+
+#overzichtaan { /* Nav*/
+    padding: 0.5em 3em;
+    border-top-right-radius: 0.25em;
+}
+
+.classoverzicht { /* Nav*/
+    border-bottom: #2C6798 solid 0.063em;
+    display: block;
+    padding-bottom: 0.5em;
+}
+
+.filterul { /* Nav*/
+    margin-top: 6em;
+}
+
+#verhalen { /* Mijn verhalen in de nav*/
+    position: relative;
+    padding: 0.5em 3em;
+}
+
+.meldingverhalen {
+    position: absolute;
+    height: 4em;
+    top: -0.8em;
+    left: 8.3em;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+#tendimg { /* Foto vrouw niet laten zien op telefoon*/
+    display: none;
+}
+
+.typetablet{ /* Invulveld niet laten zien op telefoon*/
+    display: none;
+}
+
+.bookmark, #img { /* Icoon bookmark */
+    position: absolute;
+    width: auto;
+    height: 1.875em;
+    right: 0.5em;
+    top: 0.7em;
+    margin-right: 0.5em;
+}
+
+.pabso {
+    position: absolute;
+    right: 2.5em;
+    top: 1em;
+}
+
+.accordion { /* Inklap form*/
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-left: 2em;
+    padding: 0.063em;
+    width: 3.5em;
+    height: 2em;
+    text-align: center;
+    background: #2C6798;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.accordion:focus { 
+    color: 
+}
+
+.accordion:hover{
+    color: #DB3738;
+}
+
+.classverhalen{
+    margin-right:1em;
+    position: relative;
+}
+
+.like { /* Icoon like*/
+    width: 2.5em;
+    height: 2.5em;
+    padding-bottom: 0.2em;
+    margin-right: 0.5em;
+}
+
+.artimg { /* Articles*/
+    width: 100% !important; 
+    height: 15em !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.625em;
+    padding: 0.3em 0.3em 0 0.3em;
+}
+
+.type { /* Invulveld*/
+    width: 100%;
+    display: block;
+    padding: 0.688em 0 0.688em 0;
+    border-radius: 0.25em;
+    border: none;
+    margin-bottom: 0.375em;
+    font-size: 0.75em;
+}
+
+.type:focus { 
+    background-color: rgba(44,103,152,20%);
+}
+
+.filter {
+    padding: 0.625em 1em 0.625em 1em;
+    overflow: hidden;
+}
+
+.headerverhaal{ /* verhaal pagina styling*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.verhaaliphone { /* verhaal pagina styling*/
+    margin-left:2em;
+    margin-right:2em;
+}
+
+.iphoneverhaalimg { /* verhaal pagina styling*/
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 10em;
+    height: auto;
+}
+
+.likeverhaal { /* verhaal pagina styling*/
+    width: 2.5em;
+    height: 2.5em;
+    padding-bottom: 0.2em;
+    margin-left: 3em;
+    margin-bottom: 1.5em;
+}
+
+.bookmarkverhaal { /* verhaal pagina styling*/
+    height: 2.1875em;
+    width: auto;
+    margin-left: 3.5em;
+    margin-bottom: 1.7em;
+}
+
+.gifnot {
+    position: absolute;
+    height: 6em;
+    top: 8.8em;
+    left: 12.4em;
+    z-index: -1;
+}
+
+#retlogoverhaal { /* verhaal pagina styling*/
+    height: 3.125em;
+    display: block;
+}
+
+#accountverhaal { /* verhaal pagina styling*/
+    height: 3.125em;
+}
+
+.type:focus { /* form tab functie*/
+    border-radius: 0.25em;
+    box-shadow: 0 0 3pt 1pt #2C6798;
+}
+
+form.close { /* Javascript form closen*/
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+select { /*Input voor form*/
+    display: block;
+    background-color: #ffffff;
+    font-size: 0.75em;
+    padding: 0.563em 0 0.563em 0.688em;
+    margin-bottom: 0.688em;
+    border: none;
+    width: 100%;
+}
+
+select:focus{ /* form tab functie*/
+    box-shadow: 0 0 3pt 1pt #2C6798 ;
+    background-color: rgba(44,103,152,20%);
+}
+
+a:active { /* geen streepjes*/
+    text-decoration: none;
+}
+
+a:visited { /* Geen andere kleur als je link bezocht hebt*/
+    text-decoration: none;
+}
+
+.form { /* Labels bij form */
+    border-bottom: 0.063em #DB3738 solid;
+    display: inline-block;
+    color: #2C6798;
+    margin-bottom: 0.625em;
+}
+
+.zoekknop { /* Zoekknop styling */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    background-color: #2C6798;
+    color: #ffffff;
+    margin: auto;
+    height: 2em;
+    width: 5em;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.25em;
+}
+
+@media (min-width: 28.75em) {
+
+    .meldingverhalen {
+        left: 8.5em;
+    }
+    }
+
+@media (min-width: 30em) {
+
+.meldingverhalen {
+    left: 10.5em;
+}
+}
+
+@media (min-width: 35em) {
+
+    .meldingverhalen {
+        left: 11em;
+    }
+    }
+
+@media (min-width: 40em) {
+
+    .meldingverhalen {
+        left: 12em;
+    }
+    
+    }
+
+@media (min-width: 43.75em) {
+
+    .meldingverhalen {
+        left: 13em;
+    }
+    
+    }
+
+
+
+/* Tablet */
+
+@media (min-width: 48em){
+
+*{
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1em;
+}
+
+h2 { /*Populair*/
+   margin-left: 1.938em;
+}
+
+#account { /*Logo*/
+    height: 3.125em;
+    top: 0;
+    position: relative;
+}
+
+#retlogo { /*Logo*/
+    position: absolute;
+    left: 1.938em;
+    top: 1.5em;
+    margin: 0;
+    height: 3.125em;
+    display: block;
+}
+
+#tendimg { /*Afbeelding voor tablet en desktop (vrouw)*/
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 6em;
+}
+
+ul {
+    display: flex;
+    padding: 0 5rem; 
+    margin: 0;
+}
+
+fieldset{
+    margin: 0 4em;
+}
+
+form {
+    background-color: #ffffff;  
+}
+
+article {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#overzichtaan { 
+    background-color: #ffffff;
+}
+
+.zoekbalktablet {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    position: absolute;
+    top: 1.5em;
+    right: 1.8em;
+}
+
+section article footer { /* Article gebied om tekst en iconen toe te voegen*/
+    padding: 0.3em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welkomstitel {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.filterul {
+    margin-top: 1em;
+}
+
+.typetablet { 
+    display: flex;
+    width: 22em;
+    border: 0.125em solid #EBEBEC;
+    padding: 0.688em;
+    border-radius: 0.25em;
+    font-size: 0.75em;
+}
+
+.type {
+    display: none;
+}
+
+.accordion {
+    top: 25em;
+}
+
+.accstyling{
+    position: relative;
+}
+
+.gifnot {
+    position: absolute;
+    height: 6em;
+    top: 0%;
+    left: 14em;
+    z-index: 1;
+}
+
+.flexen{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+section article {
+    width: 43%;
+}
+
+section article:nth-child(odd):last-child{
+    flex-basis: 43%;
+    margin: 2em 2em 1em 2em;
+
+}
+
+.classverhalen {
+    color: rgba(44, 103, 153, 0.4);
+}
+
+#overzichtaan {
+    margin-left: 9.5em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+#verhalen {
+    position: relative;
+    margin-right: 9.5em;
+    padding-bottom: 1em;
+}
+
+.meldingverhalen {
+    top: -1.4em;
+    left: 9em;
+}
+
+
+.filteroptie {
+    background-color: #ffffff !important;
+}
+
+.headerverhaal {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.verhaaliphone {
+    margin-left:3em;
+    margin-right:3em;
+}
+
+.iphoneverhaalimg {
+    margin-top: 2em;
+    margin-left: 8em;
+    width: 10em;
+    height: auto;
+}
+
+.likeverhaal {
+    width: 2.5em;
+    height: 2.5em;
+    padding-bottom: 0.2em;
+    margin-left: 10em;
+    margin-bottom: 1.5em;
+
+}
+
+.bookmarkverhaal {
+    height: 2.1875em;
+    width: auto;
+    margin-left: 6.5em;
+    margin-bottom: 1.7em;
+}
+
+#accountverhaal {
+    height: 3.125em;
+}
+
+#retlogoverhaal {
+    height: 3.125em;
+    display: block;
+}
+
+
+
+}
+
+
+/*Desktop*/
+@media (min-width: 60em) {
+
+article{
+    margin: 0 auto 0 auto;
+}
+
+.filterul {
+    position: absolute;
+    top: 0.7em;
+    left: 10em;
+}
+
+#overzichtaan {
+    margin-right: auto;
+    margin-left: 2em;
+}
+
+#verhalen {
+    margin-right: auto;
+    margin-left: 1em;
+
+}
+
+ul li {
+    white-space: nowrap;
+}
+
+.classverhalen{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.flexsection{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+section article {
+    width: 28%;
+}
+
+section article:nth-child(odd):last-child{
+    flex-basis: auto;
+    margin: auto;
+}
+
+.typetablet {
+    width: 22em;
+    padding-left: 1em;
+}
+
+@media (min-width: 72.5em) {
+    
+    .typetablet {
+        width: 32em;
+        padding-left: 1em;
+    }
+
+    #overzichtaan {
+        margin-right: auto;
+        margin-left: 6em;
+    }
+    
+
+
+}
