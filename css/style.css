@@ -375,7 +375,7 @@ section article footer { /* Article gebied om tekst en iconen toe te voegen*/
 }
 
 .filterul { /* Nav*/
-    margin-top: 6em;
+    padding-top: 6em;
 }
 
 #verhalen { /* Mijn verhalen in de nav*/
