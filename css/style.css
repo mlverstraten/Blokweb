@@ -347,10 +347,10 @@ section article footer { /* Article gebied om tekst en iconen toe te voegen*/
 }
 
 #account { /*Icoon account*/
-    height: 3.125em;   
-    position: absolute;
-    top: 1em;
-    right: 1em;
+    height: 3.125em !important;   
+    position: absolute !important;
+    top: 1em !important;
+    right: 1em !important;
 }
 .welkomstitel { /* Tekst voor tablet en desktop*/
     display: none;
@@ -692,8 +692,8 @@ article {
     margin-left: auto;
     align-items: center;
     position: absolute;
-    top: 1em;
-    right: 1em;
+    top: 1.5em;
+    right: 1.8em;
 }
 
 section article footer { /* Article gebied om tekst en iconen toe te voegen*/
